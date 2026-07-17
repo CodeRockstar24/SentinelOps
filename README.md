@@ -342,13 +342,8 @@ flowchart TD
     Executor -. limited .-> DemoState["Demo state only"]
 ```
 
-## Resume-Ready Summary
 
-Built a real-time AI incident response platform using Next.js, FastAPI, Redis Streams, SQLite, and Gemini agents to detect service degradation, perform root cause analysis, retrieve runbooks, enforce human approval, execute safe mock remediation, and generate postmortems.
 
-## Repository Guide
-
-- [Architecture](docs/architecture.md)
 - [Demo script](docs/demo-script.md)
 - [Deployment guide](docs/deployment.md)
 - [Project brief](docs/project-brief.md)
