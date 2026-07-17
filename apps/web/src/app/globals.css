@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 22% 97%;
+  --foreground: 222 35% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 35% 8%;
+  --muted: 214 28% 92%;
+  --muted-foreground: 218 12% 38%;
+  --border: 216 22% 86%;
+  --primary: 173 78% 29%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 218 72% 52%;
+  --danger: 0 72% 50%;
+  --success: 158 64% 38%;
+  --warning: 38 92% 50%;
+  --shell: 220 28% 12%;
+  --shell-foreground: 210 30% 96%;
+}
+
+.dark {
+  --background: 222 35% 7%;
+  --foreground: 210 30% 96%;
+  --card: 221 31% 10%;
+  --card-foreground: 210 30% 96%;
+  --muted: 221 25% 15%;
+  --muted-foreground: 216 15% 66%;
+  --border: 219 23% 20%;
+  --primary: 171 72% 44%;
+  --primary-foreground: 220 30% 6%;
+  --accent: 217 91% 66%;
+  --danger: 0 83% 64%;
+  --success: 158 64% 48%;
+  --warning: 41 96% 56%;
+  --shell: 222 40% 5%;
+  --shell-foreground: 210 30% 96%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: hsl(var(--background));
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background:
+    linear-gradient(hsl(var(--border) / 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.18) 1px, transparent 1px),
+    hsl(var(--background));
+  background-size: 36px 36px;
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.22);
+}

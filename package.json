@@ -1,0 +1,13 @@
+{
+  "name": "sentinelops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time agentic cloud incident commander.",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:web": "npm.cmd --prefix apps/web run dev",
+    "health": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Invoke-RestMethod http://localhost:8000/health | ConvertTo-Json -Depth 8\""
+  }
+}

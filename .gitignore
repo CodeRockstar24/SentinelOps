@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# Local environment and data
+.env
+.logs/
+services/api/data/*.db
+services/api/data/*.db-*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
