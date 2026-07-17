@@ -343,9 +343,6 @@ flowchart TD
 ```
 
 
-
-- [Demo script](docs/demo-script.md)
 - [Deployment guide](docs/deployment.md)
-- [Project brief](docs/project-brief.md)
-- [Resume bullets](docs/resume-bullets.md)
-- [Video script](docs/video-script.md)
+
+
